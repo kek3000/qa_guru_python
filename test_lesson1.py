@@ -8,7 +8,7 @@ def test1(browser_start):
     print('\nтест0 пройден')
 
 
-def test2():
+def test2(browser_start):
     browser.element('[name="q"]').clear().type('1273887yhfksdajhf781yfds$%^&*(').press_enter()
     browser.element('#result-stats').should(have.text('примерно 0'))
     print('\nтест1 пройден')
